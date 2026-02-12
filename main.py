@@ -21,8 +21,8 @@ app.add_middleware(
 db_config = {
     "host": "gateway01.ap-southeast-1.prod.aws.tidbcloud.com", # Your TiDB Host
     "port": 4000,
-    "user": "264bmnPh8o7ubgT.root",
-    "password": "nfvQBnemlyCzY2xD",
+    "user": "2HXyCDQpUT9y13w.root",
+    "password": "8Bdc3sS7WJL11QtA",
     "database": "app_db",
     "ssl_ca": certifi.where(),
     "ssl_verify_cert": True,
@@ -286,3 +286,4 @@ async def query_collection(collection: str, query: QueryRequest):
 @app.get("/")
 async def root():
     return {"message": "Welcome to the TiDB API"}
+
